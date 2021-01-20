@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border box;
+}
+:root {
+  --box-shadow-color: #054d4a;
+  --font-color: #054d4a;
+}
+img {
+  padding: 0;
+  margin: 2px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+body {
+  font-family: "Grandstander", cursive;
+  font-size: 1.5rem;
+  background-color: #23b674;
+}
+.container {
+  height: 100%vh;
+  width: 100%;
+  /* margin: 0 auto;
+  padding: 1rem; */
+}
+h2 {
+  font: 0.8rem;
+  color: red;
+}
+h1 {
+  text-align: center;
+  font: 1rem;
+  color: var(--font-color);
+  margin: 3rem 0;
+}
+.board {
+  width: calc(100% / 12 * 6);
+  /* text-align: center;
+  border: 10px; */
+}
+.wrapper {
+  background: #1ba8f1;
+  max-width: 60%;
+  height: 100%;
+  margin: 0.5rem auto;
+  padding: 2rem;
+  border: 0.2rem solid #064c6e;
+  border-radius: 30px;
+  box-shadow: 0 0 10px 2px var(--box-shadow-color);
+  display: flex;
+  flex-flow: column;
+}
+.hide {
+  display: none;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  font-size: 3rem;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 20px;
+  outline: none;
+  background: #1ba8f1;
+  box-shadow: 0 0 10px 2px var(--box-shadow-color);
+}
+button:hover {
+  border: 3px solid #064c6e;
+}
+.board,
+.timer {
+  margin: 0 auto;
+}
+.timer {
+  color: red;
+  font-size: 2rem;
+  padding: 0.3rem 0.5rem;
+  margin-bottom: 1rem;
+  border: 2px solid var(--font-color);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
